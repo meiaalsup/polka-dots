@@ -23,7 +23,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'jreybert/vimagit'
 Plug 'vim-syntastic/syntastic'
 Plug 'davidhalter/jedi-vim'
-" Colorschemes
+" Colorschemes "
+Plug 'mhartington/oceanic-next'
 Plug 'freeo/vim-kalisi'
 Plug 'morhetz/gruvbox'
 Plug 'fcpg/vim-orbital'
@@ -34,7 +35,7 @@ call plug#end()
 syntax enable
 filetype plugin indent on
 
-colorscheme gruvbox
+colorscheme OceanicNext
 set background=dark
 
 set t_Co=256
