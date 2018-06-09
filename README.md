@@ -7,7 +7,7 @@ Awesome neovim settings
 * `brew install neovim`
 * `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
-* `git clone git@github.com:jerluc/polka-dots.git`
+* `git clone git@github.com:meiaalsup/polka-dots.git`
 * `./new_setup.sh`
 * `nvim`
 * `:PlugInstall`
