@@ -10,3 +10,4 @@ Awesome neovim settings
 * `./new_setup.sh`
 * `nvim`
 * `:PlugInstall`
+* Add `alias vim='nvim'` to bash profile
