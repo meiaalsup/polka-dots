@@ -11,3 +11,4 @@ Awesome neovim settings
 * `nvim`
 * `:PlugInstall`
 * Add `alias vim='nvim'` to bash profile
+* `pip3 install --user neovim`
