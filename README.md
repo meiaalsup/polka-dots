@@ -4,7 +4,7 @@ Awesome neovim and iterm2 settings
 
 ## Installation Instructions
 ### Install Iterm2
-* `brew install iterm2`
+* Install [iterm2](https://www.iterm2.com/)
 * `git clone git@github.com:mhartington/oceanic-next-iterm.git`
 * Update color scheme to `oceanic-next-iterm` in the profiles section of iterm2
 
