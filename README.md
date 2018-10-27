@@ -1,8 +1,13 @@
 # polka-dots
-Awesome neovim settings
+Awesome neovim and iterm2 settings
 
 
 ## Installation Instructions
+### Install Iterm2
+* `brew install iterm2`
+* `git clone git@github.com:mhartington/oceanic-next-iterm.git`
+* Update color scheme to `oceanic-next-iterm` in the profiles section of iterm2
+
 ### Install neovim
 * `brew tap neovim/neovim`
 * `brew install neovim`
