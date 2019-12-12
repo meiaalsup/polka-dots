@@ -7,6 +7,7 @@ Awesome neovim and iterm2 settings
 * Install [iterm2](https://www.iterm2.com/)
 * `git clone git@github.com:mhartington/oceanic-next-iterm.git`
 * Update color scheme to `oceanic-next-iterm` in the profiles section of iterm2
+* Follow https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x for fast command line nav
 
 ### Install neovim
 * `brew tap neovim/neovim`
