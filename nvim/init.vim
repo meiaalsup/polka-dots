@@ -8,6 +8,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'"
 " Colorschemes "
 Plug 'mhartington/oceanic-next'
+"
 "Latex Plugins"
 Plug 'lervag/vimtex'
 Plug 'Konfekt/FastFold'
@@ -15,6 +16,10 @@ Plug 'matze/vim-tex-fold'
 "Autocomplete"
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
+
+"Javascript beautify"
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " enable ncm2 for all buffers
 "autocmd BufEnter * call ncm2#enable_for_buffer()"
@@ -32,11 +37,31 @@ syntax enable
 filetype plugin indent on
 
 colorscheme OceanicNext
-set background=dark
+"set background=dark
 
 set shellcmdflag=-ic
 
 set t_Co=256
+if (has("termguicolors"))
+    set termguicolors
+endif
+
+set t_8f=^[[38;2;%lu;%lu;%lum  " Needed in tmux
+set t_8b=^[[48;2;%lu;%lu;%lum  " for true colors
+
+
+if &term =~ '256color'
+    " disable Background Color Erase (BCE) so that color schemes
+    " render properly when inside 256-color tmux and GNU screen.
+    " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+    set t_ut=
+endifif &term =~ '256color'
+    " disable Background Color Erase (BCE) so that color schemes
+    " render properly when inside 256-color tmux and GNU screen.
+    " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+    set t_ut=
+endif
+
 let &t_AB="\e[48;5;%dm"
 let &t_AF="\e[38;5;%dm"
 set encoding=utf-8
@@ -127,3 +152,4 @@ augroup END
 
 autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
