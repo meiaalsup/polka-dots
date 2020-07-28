@@ -27,3 +27,15 @@ Awesome neovim and iterm2 settings
 ### Add Powerline fonts
 * `git clone git@github.com:artofrawr/powerline-fonts.git`
 * `./install.sh` (inside powerline)
+
+
+## Random useful stuff
+### To Install (make install script later)
+* `tldr`
+* `cmake`
+* `silver searcher`
+
+### Others
+* `awk`
+* `sed`
+
